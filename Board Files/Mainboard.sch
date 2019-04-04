@@ -7889,15 +7889,15 @@ Version 3, 29 June 2007
 </net>
 <net name="LED1-1" class="0">
 <segment>
-<wire x1="104.14" y1="185.42" x2="109.22" y2="185.42" width="0.1524" layer="91"/>
-<label x="109.22" y="185.42" size="1.27" layer="255" font="vector" xref="yes"/>
+<wire x1="104.14" y1="185.42" x2="106.68" y2="185.42" width="0.1524" layer="91"/>
+<label x="106.68" y="185.42" size="1.27" layer="255" font="vector" xref="yes"/>
 <pinref part="LED_REG_1" gate="U1" pin="QA"/>
 </segment>
 </net>
 <net name="LED1-2" class="0">
 <segment>
-<wire x1="104.14" y1="182.88" x2="107.95" y2="182.88" width="0.1524" layer="91"/>
-<label x="107.95" y="182.88" size="1.27" layer="255" font="vector" xref="yes"/>
+<wire x1="104.14" y1="182.88" x2="106.68" y2="182.88" width="0.1524" layer="91"/>
+<label x="106.68" y="182.88" size="1.27" layer="255" font="vector" xref="yes"/>
 <pinref part="LED_REG_1" gate="U1" pin="QB"/>
 </segment>
 </net>
