@@ -1,0 +1,1 @@
+I used the blue 8MM cherry dimensions, but added .125mm to each dimension for the socket.
