@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.3.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
@@ -7994,18 +7994,6 @@ Version 3, 29 June 2007
 <label x="279.4" y="187.96" size="1.27" layer="255" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="KEY_CLOCK" class="0">
-<segment>
-<pinref part="KEY_REG_2" gate="A" pin="CLK"/>
-<wire x1="248.92" y1="124.46" x2="246.38" y2="124.46" width="0.1524" layer="91"/>
-<label x="246.38" y="124.46" size="1.27" layer="255" font="vector" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="KEY_REG_3" gate="A" pin="CLK"/>
-<wire x1="248.92" y1="73.66" x2="246.38" y2="73.66" width="0.1524" layer="91"/>
-<label x="246.38" y="73.66" size="1.27" layer="255" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="KEY_LATCH" class="0">
 <segment>
 <pinref part="KEY_REG_1" gate="A" pin="P/!S"/>
@@ -8079,6 +8067,16 @@ Version 3, 29 June 2007
 <pinref part="KEY_REG_1" gate="A" pin="CLK"/>
 <wire x1="248.92" y1="172.72" x2="246.38" y2="172.72" width="0.1524" layer="91"/>
 <label x="246.38" y="172.72" size="1.27" layer="255" font="vector" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="KEY_REG_2" gate="A" pin="CLK"/>
+<wire x1="248.92" y1="124.46" x2="246.38" y2="124.46" width="0.1524" layer="91"/>
+<label x="246.38" y="124.46" size="1.27" layer="255" font="vector" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="KEY_REG_3" gate="A" pin="CLK"/>
+<wire x1="248.92" y1="73.66" x2="246.38" y2="73.66" width="0.1524" layer="91"/>
+<label x="246.38" y="73.66" size="1.27" layer="255" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED_ENABLE" class="0">
