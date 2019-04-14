@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.1">
+<eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
@@ -5408,6 +5408,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="C3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" package3d_urn="urn:adsk.eagle:package:37423/1" value="10uF"/>
 <part name="+5V26" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="GND39" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="R54" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value=" "/>
+<part name="R55" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value=" "/>
 </parts>
 <sheets>
 <sheet>
@@ -5443,9 +5445,9 @@ Version 3, 29 June 2007
 <wire x1="172.72" y1="31.75" x2="119.38" y2="31.75" width="0.1524" layer="94"/>
 <wire x1="119.38" y1="31.75" x2="119.38" y2="95.25" width="0.1524" layer="94"/>
 <text x="119.38" y="96.52" size="1.27" layer="97">Octave Shift Buttons</text>
-<wire x1="20.32" y1="95.25" x2="101.6" y2="95.25" width="0.1524" layer="94"/>
-<wire x1="101.6" y1="95.25" x2="101.6" y2="31.75" width="0.1524" layer="94"/>
-<wire x1="101.6" y1="31.75" x2="20.32" y2="31.75" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="95.25" x2="111.76" y2="95.25" width="0.1524" layer="94"/>
+<wire x1="111.76" y1="95.25" x2="111.76" y2="31.75" width="0.1524" layer="94"/>
+<wire x1="111.76" y1="31.75" x2="20.32" y2="31.75" width="0.1524" layer="94"/>
 <wire x1="20.32" y1="31.75" x2="20.32" y2="95.25" width="0.1524" layer="94"/>
 <text x="20.32" y="96.52" size="1.27" layer="97">Encoder Menu Controller</text>
 <wire x1="20.32" y1="160.02" x2="99.06" y2="160.02" width="0.1524" layer="94"/>
@@ -5558,6 +5560,14 @@ Version 3, 29 June 2007
 <instance part="VR1" gate="G$1" x="200.66" y="109.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="200.914" y="112.268" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="200.66" y="107.95" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="R54" gate="G$1" x="83.82" y="68.58" smashed="yes" rot="R180">
+<attribute name="NAME" x="83.82" y="67.056" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="83.82" y="70.104" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
+</instance>
+<instance part="R55" gate="G$1" x="83.82" y="63.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="83.82" y="61.976" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="83.82" y="65.024" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -5839,11 +5849,11 @@ Version 3, 29 June 2007
 <segment>
 <pinref part="S28" gate="G$1" pin="SW"/>
 <wire x1="71.12" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="71.12" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
 <junction x="76.2" y="71.12"/>
 <pinref part="R53" gate="G$1" pin="1"/>
-<label x="81.28" y="71.12" size="1.27" layer="95" xref="yes"/>
+<label x="91.44" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="A3"/>
@@ -5858,9 +5868,9 @@ Version 3, 29 June 2007
 <label x="78.74" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="81.28" y="68.58" size="1.27" layer="95" xref="yes"/>
-<pinref part="S28" gate="G$1" pin="+G"/>
-<wire x1="71.12" y1="68.58" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R54" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
+<label x="91.44" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ENCODER_RED" class="0">
@@ -5870,9 +5880,25 @@ Version 3, 29 June 2007
 <label x="78.74" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="81.28" y="66.04" size="1.27" layer="95" xref="yes"/>
+<pinref part="R55" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="63.5" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
+<label x="91.44" y="63.5" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="S28" gate="G$1" pin="+G"/>
+<pinref part="R54" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="68.58" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
 <pinref part="S28" gate="G$1" pin="+R"/>
-<wire x1="71.12" y1="66.04" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="66.04" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="66.04" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="R55" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -8119,7 +8145,7 @@ Version 3, 29 June 2007
 <label x="246.38" y="73.66" size="1.27" layer="255" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="LED_ENABLE" class="0">
+<net name="LED_OUTPUT_EN" class="0">
 <segment>
 <pinref part="LED_REG_1" gate="U1" pin="G"/>
 <wire x1="83.82" y1="170.18" x2="81.28" y2="170.18" width="0.1524" layer="91"/>
