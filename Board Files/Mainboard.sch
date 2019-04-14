@@ -5227,9 +5227,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="GND25" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND26" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="LED_REG_2" library="SparkFun-IC-Logic" library_urn="urn:adsk.eagle:library:523" deviceset="74*595" device="N" package3d_urn="urn:adsk.eagle:package:38809/1" technology="HC" value="SN74HC595N "/>
-<part name="+5V25" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="LED_REG_3" library="SparkFun-IC-Logic" library_urn="urn:adsk.eagle:library:523" deviceset="74*595" device="N" package3d_urn="urn:adsk.eagle:package:38809/1" technology="HC" value="SN74HC595N "/>
-<part name="+5V26" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="KEY_REG_1" library="40xx" library_urn="urn:adsk.eagle:library:80" deviceset="4021" device="N" package3d_urn="urn:adsk.eagle:package:922/2"/>
 <part name="+5V31" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="GND57" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
@@ -5404,6 +5402,12 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="R53" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-1%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="+5V41" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="VR1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="POTENTIOMETER" device="-PTH-9MM-1/20W-20%" package3d_urn="urn:adsk.eagle:package:39672/1" value="10k"/>
+<part name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" package3d_urn="urn:adsk.eagle:package:37423/1" value="10uF"/>
+<part name="+5V25" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
+<part name="GND38" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="C3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" package3d_urn="urn:adsk.eagle:package:37423/1" value="10uF"/>
+<part name="+5V26" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
+<part name="GND39" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7636,15 +7640,9 @@ Version 3, 29 June 2007
 <attribute name="NAME" x="86.36" y="143.002" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="86.36" y="111.76" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="+5V25" gate="G$1" x="104.14" y="144.78" smashed="yes">
-<attribute name="VALUE" x="104.14" y="147.574" size="1.778" layer="96" align="bottom-center"/>
-</instance>
 <instance part="LED_REG_3" gate="U1" x="91.44" y="76.2" smashed="yes">
 <attribute name="NAME" x="86.36" y="89.662" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="86.36" y="58.42" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="+5V26" gate="G$1" x="104.14" y="91.44" smashed="yes">
-<attribute name="VALUE" x="104.14" y="94.234" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="KEY_REG_1" gate="A" x="261.62" y="182.88" smashed="yes">
 <attribute name="NAME" x="254" y="201.295" size="1.778" layer="95"/>
@@ -7700,6 +7698,26 @@ Version 3, 29 June 2007
 <instance part="GND30" gate="1" x="81.28" y="58.42" smashed="yes">
 <attribute name="VALUE" x="81.28" y="58.166" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="C2" gate="G$1" x="114.3" y="147.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="113.665" y="148.336" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="118.491" y="148.336" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="+5V25" gate="G$1" x="106.68" y="152.4" smashed="yes">
+<attribute name="VALUE" x="106.68" y="155.194" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND38" gate="1" x="121.92" y="142.24" smashed="yes">
+<attribute name="VALUE" x="121.92" y="141.986" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="C3" gate="G$1" x="114.3" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="113.665" y="94.996" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="118.491" y="94.996" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="+5V26" gate="G$1" x="106.68" y="99.06" smashed="yes">
+<attribute name="VALUE" x="106.68" y="101.854" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND39" gate="1" x="121.92" y="88.9" smashed="yes">
+<attribute name="VALUE" x="121.92" y="88.646" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7714,16 +7732,6 @@ Version 3, 29 June 2007
 <junction x="106.68" y="195.58"/>
 <pinref part="LED_REG_1" gate="U1" pin="VCC"/>
 <wire x1="106.68" y1="187.96" x2="104.14" y2="187.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="+5V25" gate="G$1" pin="VCC"/>
-<pinref part="LED_REG_2" gate="U1" pin="VCC"/>
-<wire x1="104.14" y1="139.7" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="+5V26" gate="G$1" pin="VCC"/>
-<pinref part="LED_REG_3" gate="U1" pin="VCC"/>
-<wire x1="104.14" y1="86.36" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+5V31" gate="G$1" pin="VCC"/>
@@ -7757,6 +7765,26 @@ Version 3, 29 June 2007
 <wire x1="55.88" y1="78.74" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="+5V36" gate="G$1" pin="VCC"/>
 <pinref part="LED_REG_3" gate="U1" pin="SCL"/>
+</segment>
+<segment>
+<pinref part="+5V25" gate="G$1" pin="VCC"/>
+<wire x1="106.68" y1="147.32" x2="111.76" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="+"/>
+<wire x1="106.68" y1="152.4" x2="106.68" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="147.32" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
+<junction x="106.68" y="147.32"/>
+<pinref part="LED_REG_2" gate="U1" pin="VCC"/>
+<wire x1="106.68" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+5V26" gate="G$1" pin="VCC"/>
+<wire x1="106.68" y1="93.98" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="+"/>
+<wire x1="106.68" y1="99.06" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="93.98" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<junction x="106.68" y="93.98"/>
+<pinref part="LED_REG_3" gate="U1" pin="VCC"/>
+<wire x1="104.14" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7798,6 +7826,18 @@ Version 3, 29 June 2007
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="81.28" y1="63.5" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="LED_REG_3" gate="U1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="-"/>
+<wire x1="119.38" y1="147.32" x2="121.92" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="GND38" gate="1" pin="GND"/>
+<wire x1="121.92" y1="147.32" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="-"/>
+<wire x1="119.38" y1="93.98" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="GND39" gate="1" pin="GND"/>
+<wire x1="121.92" y1="93.98" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED1-1" class="0">
